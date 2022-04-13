@@ -1,0 +1,25 @@
+.container{
+    width: 70vw;
+    margin: auto;
+    /* border: 3px solid red; */
+    margin-top: 40px;
+}
+.cardContainer{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid green; */
+}
+.card{
+    border: 3px solid magenta;
+    padding: 1%;
+}
+.imageContainer{
+    max-width: 200px;
+}
+.imageContainer img{
+    width: 100%;
+}
+.hospName{
+    margin:30px;
+    margin-bottom: 10px;
+}
