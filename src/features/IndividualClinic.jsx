@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { getsingleClinic } from "./clinic.api";
-import styles from "./clinic.module.css"
+import styles from "./individualclinic.module.css"
 import Doctor from "./Doctor";
 
 const IndividualClinic = () => {
