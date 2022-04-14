@@ -26,7 +26,7 @@ const IndividualClinic = () => {
       ) : (
        
         <div>
-          <h1 className={styles.h} style={{textAlign:"center", marginBottom: "30px", color:"magenta"}}>{clinics.clinicName}</h1>
+          <h1 style={{textAlign:"center", marginBottom: "30px"}}>{clinics.clinicName}</h1>
           {clinics.doctorid?.map((val) => (
             <Doctor key={val.name} {...val}/>
           ))}
