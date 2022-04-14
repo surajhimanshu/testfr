@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { getsingleClinic } from "./clinic.api";
-import styles from "./individualclinic.module.css"
+import styles from "./clinic.module.css"
 import Doctor from "./Doctor";
 
 const IndividualClinic = () => {
@@ -26,7 +26,7 @@ const IndividualClinic = () => {
       ) : (
        
         <div>
-          <h1 className={styles.h}>{clinics.clinicName}</h1>
+          <h1 style={{textAlign:"center", marginBottom: "30px"}}>{clinics.clinicName}</h1>
           {clinics.doctorid?.map((val) => (
             <Doctor key={val.name} {...val}/>
           ))}
